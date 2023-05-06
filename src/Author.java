@@ -13,4 +13,20 @@ public class Author {
     public  String getSecondName() {
         return this.secondName;
     }
+
+    public String toString() {
+        return "Имя " + this.firstName + " Фамилия " + this.secondName;
+    }
+
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public int hashCode() {
+        return java.util.Objects.hash(this.getClass());
+    }
 }

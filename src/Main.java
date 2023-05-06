@@ -1,33 +1,28 @@
 public class Main {
     public static void main(String[] args) {
         Author amitDuvdevani = new Author("Amit", "Duvdevani");
-        System.out.println("Имя " + amitDuvdevani.getFirstName());
-        System.out.println("Фамилия " + amitDuvdevani.getSecondName());
+        String a = amitDuvdevani.toString();
+        System.out.println(a);
 
         System.out.println("");
 
         Author erezEisen = new Author("Erez", "Eisen");
-        System.out.println("Имя " + erezEisen.getFirstName());
-        System.out.println("Фамилия " + erezEisen.getSecondName());
+        String au = erezEisen.toString();
+        System.out.println(au);
 
         System.out.println("");
 
             Book blackVelvet = new Book("Black Velvet", amitDuvdevani, 2022);
-            System.out.println("Название " + blackVelvet.getName());
-            System.out.println("Год выпуска " + blackVelvet.getYear());
-        System.out.println("Автор " + blackVelvet.getAuthor());
-        blackVelvet.setYear(2023);
-        System.out.println("Перевыпуск " + blackVelvet.getYear());
+        String s = blackVelvet.toString();
+        System.out.println(s);
 
         System.out.println("");
 
         Book whileImInTheMood = new Book("While I'm in the Mood", erezEisen, 2022);
-        System.out.println("Название " + whileImInTheMood.getName());
-        System.out.println("Год выпуска " + whileImInTheMood.getYear());
-        System.out.println("Автор " + whileImInTheMood.getAuthor());
-        whileImInTheMood.setYear(2023);
-        System.out.println("Перевыпуск " + whileImInTheMood.getYear());
+        String st = whileImInTheMood.toString();
+        System.out.println(st);
 
+        System.out.println("Оригинальные ли авторы? " + erezEisen.equals(amitDuvdevani));
+        System.out.println("Оригинальные ли работы? " + blackVelvet.equals(whileImInTheMood));
+        }
     }
-
-}
