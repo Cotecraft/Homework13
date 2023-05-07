@@ -25,4 +25,6 @@ public class Main {
         System.out.println("Оригинальные ли авторы? " + erezEisen.equals(amitDuvdevani));
         System.out.println("Оригинальные ли работы? " + blackVelvet.equals(whileImInTheMood));
         }
+
+
     }
